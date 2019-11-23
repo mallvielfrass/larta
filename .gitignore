@@ -2,11 +2,10 @@
 *
 
 #unignore directories
-!*/
 
 #unignore source code
-!larta/*.go
+*.go
 
 #unignore gitignore and go module
 !.gitignore
-!**/go.mod
+!go.mod
