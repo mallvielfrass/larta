@@ -2,9 +2,9 @@
 *
 
 #unignore directories
-
+!*/
 #unignore source code
-*.go
+!**/*.go
 
 #unignore gitignore and go module
 !.gitignore
