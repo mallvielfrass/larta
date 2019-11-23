@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"os/user"
+	"strings"
+)
 
 func main() {
-  fmt.Println("\x1b[38;2;231;0;247mhello, world!\x1b[0m")
+	usr, err := user.Current(); loged(err)
+	home := usr.HomeDir
+	dir, err := os.Getwd(); loged(err)
+	dir = strings.Replace(dir, home, "~", 1)
+	pwd := magenta(dir)
+	fmt.Println(pwd)
 }
