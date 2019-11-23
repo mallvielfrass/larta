@@ -19,6 +19,6 @@ func PrintPrompt() {
 	pwd := magenta(dir)
 
 	promptStr := fmt.Sprintf("on %s with %s", pwd, python)
-	fmt.Println(prompt)
+	fmt.Println(promptStr)
 	fmt.Println(magenta(" ~>"))
 }
