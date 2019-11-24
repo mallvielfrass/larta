@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./prompt"
+	"github.com/mallvielfrass/larta/prompt"
 )
 
 func main() {
