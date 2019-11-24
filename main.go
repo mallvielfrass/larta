@@ -6,4 +6,5 @@ import (
 
 func main() {
 	prompt.PrintPrompt()
+	print
 }
